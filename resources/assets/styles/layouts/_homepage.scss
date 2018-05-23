@@ -1,0 +1,23 @@
+.welcome-text {
+  background: #191919;
+  color: #9b9b9b;
+  line-height: 25px;
+  padding: 31px 122px;
+  position: relative;
+
+  &::before {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #900;
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  p {
+    font-size: 85%;
+    margin-bottom: 0;
+  }
+}

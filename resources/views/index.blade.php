@@ -1,18 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
-
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, no results were found.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
-
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
-
-  {!! get_the_posts_navigation() !!}
+  @include('partials.home-carousel')
+  <div class="welcome-text">
+    <p>It is with great pleasure that {{ get_bloginfo('name') }} welcomes you to El Segundo, and to her website. With years of experience in the market, she knows how crucial it is for you to find relevant, up-to-date information. The search is over. Her website is designed to be your one-stop shop for real estate in El Segundo.This is the moment that you should enjoy the most; looking at the available properties in El Segundo; imagining yourself living in the home that you have always dreamed about. You don’t want just another database that gives you rehashed property descriptions. You want to walk around the neighborhood from the comfort of your own home. You want to get a clear picture about life in El Segundo.</p>
+  </div>
 @endsection
