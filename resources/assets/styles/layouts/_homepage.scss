@@ -21,3 +21,183 @@
     margin-bottom: 0;
   }
 }
+
+.home-featured-wrap {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-top: 50px;
+
+  .widget-a,
+  .widget-c {
+    border-bottom: 1px solid #e5e5e6;
+    margin-bottom: 29px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    .featured-title-a {
+      border-bottom: 1px solid #e8b2b2;
+      border-top: 1px solid #e8b2b2;
+      color: #900;
+      font-family: 'Brawler', serif;
+      font-size: 17px;
+      letter-spacing: 3px;
+      line-height: 51px;
+    }
+
+    .featured-loc-img {
+      margin: 0 0 30px 0;
+    }
+
+    .featured-loc-name {
+      color: #7f7f7f;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .featured-loc-price {
+      color: #7f7f7f;
+      font-size: 14px;
+      letter-spacing: 2px;
+    }
+  }
+
+  .widget-b,
+  .widget-c {
+    text-align: center;
+  }
+
+  .featured-title-b {
+    background-color: #4c4c4c;
+    color: #fff;
+    font-family: 'Brawler', serif;
+    font-size: 17px;
+    letter-spacing: 3px;
+    line-height: 53px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid #4c4c4c;
+      bottom: -10px;
+      content: ' ';
+      display: inline-block;
+      height: 10px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 10px;
+    }
+  }
+
+  .dd-custom-select {
+    background-color: #ccc;
+    border: 0;
+    color: #4c4c4c;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 300;
+    height: 43px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding: 8px;
+    text-transform: uppercase;
+    width: 100%;
+
+    option {
+      font-size: 12px;
+      padding: 7px;
+    }
+
+    &#searchBedRooms,
+    &#searchBaths,
+    &#searchMinPrice,
+    &#searchMaxPrice {
+      display: inline-block;
+      width: 48%;
+    }
+
+    &#searchBedRooms,
+    &#searchMinPrice {
+      float: left;
+    }
+
+    &#searchBaths,
+    &#searchMaxPrice {
+      float: right;
+    }
+  }
+
+  .dd-custom-submit {
+    background-color: #4c4c4c;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 43px;
+    margin-bottom: 10px;
+    padding: 1px 6px;
+    text-transform: uppercase;
+    width: 100%;
+
+    &:hover {
+      background-color: #b40001;
+    }
+  }
+
+  .dd-custom-anchor {
+    color: #7f7f7f;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.widget-d-area {
+  background-color: #dedfdb;
+  padding: 44px 0 49px 0;
+
+  .widget-d {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1140px;
+
+    a {
+      background-color: #b40101;
+      color: white;
+      display: inline-block;
+      padding: 15px 18px;
+      width: 31.58%;
+
+      &:hover {
+        background-color: #4c4c4c;
+      }
+
+      &:nth-child(2) {
+        margin: 0 25px;
+      }
+
+      span {
+        border-bottom: 1px solid #c74141;
+        border-top: 1px solid #c74141;
+        display: block;
+        font-family: 'Brawler', serif;
+        font-size: 17px;
+        letter-spacing: 2px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+  }
+}
