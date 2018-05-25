@@ -12,14 +12,16 @@
 			</div>
 
 			<div class="dd-site-tagline dd-header-block">
-				<span>
+				<!-- <span>
 					{{ get_bloginfo('description') }}
-				</span>
+				</span> -->
+				<span>{{ App::get_company_tagline() }}</span>
 			</div>
 
 			<div class="dd-site-logo dd-header-block">
 				<a href="{{ get_site_url() }}">
-					<img src="https://i.imgur.com/gV9TrRM.png" alt="Company Logo">
+					<!-- <img src="https://i.imgur.com/gV9TrRM.png" alt="Company Logo"> -->
+					<img src="{{ App::logo() }}" alt="Company Logo">
 				</a>
 			</div>
 		</div>

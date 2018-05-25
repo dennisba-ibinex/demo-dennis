@@ -30,4 +30,22 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public static function logo()
+    {
+        if($logo = get_theme_mod('theme_header_logo')) {
+            return $logo;
+        }
+
+        return 'https://i.imgur.com/gV9TrRM.png';
+    }
+
+    public static function get_company_tagline()
+    {
+        if($tagline = get_theme_mod('theme_header_tagline')) {
+            return $tagline;
+        }
+
+        return 'You may enter your tagline in the theme customizer';
+    }
 }
