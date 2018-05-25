@@ -4,6 +4,19 @@ import 'jquery';
 // Import everything from autoload
 import "./autoload/**/*"
 
+// base package
+import fontawesome from "@fortawesome/fontawesome";
+
+// Import Icons
+import faFacebookSquare from "@fortawesome/fontawesome-free-brands/faFacebookSquare";
+import faTwitterSquare from "@fortawesome/fontawesome-free-brands/faTwitterSquare";
+import faGooglePlusSquare from "@fortawesome/fontawesome-free-brands/faGooglePlusSquare";
+import faLinkedinIn from "@fortawesome/fontawesome-free-brands/faLinkedinIn";
+import faYelp from "@fortawesome/fontawesome-free-brands/faYelp";
+
+// add the imported icons to the library
+fontawesome.library.add(faFacebookSquare, faTwitterSquare, faGooglePlusSquare, faLinkedinIn, faYelp);
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';

@@ -1,0 +1,46 @@
+.dd-widget-e {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  max-width: 360px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+
+  .dd-widget-title {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 43px 0 30px 0;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .dd-widget-testi {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0 20px;
+
+    span {
+      display: block;
+      font-size: 13px;
+      margin: 25px 0;
+    }
+  }
+
+  .dd-widget-btn {
+    background-color: #474748;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 27px;
+    margin: 15px 0 35px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}

@@ -1,0 +1,87 @@
+.dd-widget-g {
+  color: #fff;
+  max-width: 360px;
+  padding: 0;
+  text-align: center;
+  width: 31.57%;
+
+  span {
+    display: block;
+  }
+
+  .dd-widget-title {
+    border-bottom: 1px solid #939393;
+    font-family: 'Brawler', serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 0 auto 22px;
+    padding-bottom: 14px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    width: 87%;
+  }
+
+  .dd-photo-wrap {
+    height: 114px;
+    margin: 0 auto 27px;
+    overflow: hidden;
+    width: 114px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .dd-co-phone-no {
+    margin-bottom: 10px;
+
+    em {
+      font-family: 'Brawler', serif;
+      font-size: 26px;
+      font-style: normal;
+      line-height: 26px;
+    }
+  }
+
+  .dd-co-email-addr {
+    margin-bottom: 20px;
+
+    a {
+      font-family: 'Brawler', serif;
+      font-size: 15px;
+    }
+  }
+
+  .dd-co-office-addr {
+    font-size: 12px;
+  }
+
+  .dd-socmedia {
+    a {
+      font-size: 30px;
+      margin: 0 5px;
+      position: relative;
+    }
+
+    .fa-facebook-square {
+      color: #3b5898;
+      position: relative;
+    }
+
+    .fa-twitter-square {
+      color: #36b2e4;
+    }
+
+    .fa-google-plus-square {
+      color: #df4a3a;
+    }
+
+    .fa-linkedin-in {
+      color: #2683bc;
+    }
+
+    .fa-yelp {
+      color: #c53428;
+    }
+  }
+}

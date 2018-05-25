@@ -3,6 +3,26 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   padding: 0;
+
+  &::selection {
+    background-color: #900;
+    color: #fff;
+  }
+}
+
+#wpadminbar {
+  animation: glowPulse 3s ease-in-out alternate infinite;
+  background-color: #900;
+}
+
+@keyframes glowPulse {
+  0% {
+    background-color: #900;
+  }
+
+  100% {
+    background-color: #600;
+  }
 }
 
 a {
