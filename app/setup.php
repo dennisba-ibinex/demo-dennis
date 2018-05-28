@@ -77,12 +77,46 @@ add_action('widgets_init', function () {
         'before_widget' => '<section class="widget %1$s %2$s">',
         'after_widget'  => '</section>',
         'before_title'  => '<h3>',
-        'after_title'   => '</h3>'
+        'after_title'   => '</h3>',
     ];
+
+    $dd_row_config = [
+        'before_widget' => '<div class="row">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ];
+
     register_sidebar([
-        'name'          => __('Primary', 'sage'),
-        'id'            => 'sidebar-primary'
-    ] + $config);
+        'name'          => __('Homepage - First Row', 'sage'),
+        'id'            => 'homepage-widget-row-1',
+    ] + $dd_row_config);
+
+    register_sidebar([
+        'name'          => __('Homepage - Second Row', 'sage'),
+        'id'            => 'homepage-widget-row-2',
+    ] + $dd_row_config);
+
+    register_sidebar([
+        'name'          => __('Homepage - Third Row', 'sage'),
+        'id'            => 'homepage-widget-row-3',
+    ] + $dd_row_config);
+
+    register_sidebar([
+        'name'          => __('Homepage - Fourth Row', 'sage'),
+        'id'            => 'homepage-widget-row-4',
+    ] + $dd_row_config);
+
+    register_sidebar([
+        'name'          => __('Homepage - Fifth Row', 'sage'),
+        'id'            => 'homepage-widget-row-5',
+    ] + $dd_row_config);
+
+    register_sidebar([
+        'name'          => __('Homepage - Sixth Row', 'sage'),
+        'id'            => 'homepage-widget-row-6',
+    ] + $dd_row_config);
+
     register_sidebar([
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
